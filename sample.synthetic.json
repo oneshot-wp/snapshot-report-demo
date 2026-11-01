@@ -1,0 +1,7 @@
+[
+  {"platform":"demo-video","post_id":"001","published_at":"2026-10-26T10:00:00+08:00","observed_at":"2026-10-30T12:00:00+08:00","views":600,"likes":30,"comments":4,"shares":3},
+  {"platform":"demo-video","post_id":"001","published_at":"2026-10-26T10:00:00+08:00","observed_at":"2026-11-01T12:00:00+08:00","views":1000,"likes":50,"comments":10,"shares":5},
+  {"platform":"demo-video","post_id":"002","published_at":"2026-10-28T10:00:00+08:00","observed_at":"2026-11-01T12:00:00+08:00","views":500,"likes":20,"comments":3,"shares":2},
+  {"platform":"demo-notes","post_id":"001","published_at":"2026-10-27T10:00:00+08:00","observed_at":"2026-11-01T12:00:00+08:00","views":800,"likes":40,"comments":8,"shares":null},
+  {"platform":"demo-video","post_id":"outside","published_at":"2026-10-25T10:00:00+08:00","observed_at":"2026-11-01T12:00:00+08:00","views":99999,"likes":5000,"comments":500,"shares":400}
+]

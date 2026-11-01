@@ -1,2 +1,24 @@
-# snapshot-report-demo
-AI-assisted local JSON reporting sample with synthetic data, traceable outputs and tests. Not a client case.
+# 本地内容数据周报演示
+
+这是AI辅助制作的售前原型，数据全部合成，不是客户案例或真实运营成果。用于展示数据整合、去重、汇总和周报的核心路径。无依赖包、无API调用、无账号访问和费用。
+
+在本目录运行：
+
+```powershell
+python -m unittest -v test_report.py
+python report.py sample.synthetic.json --week 2026-10-26 --output sample-output
+```
+
+输入为标准JSON数组，样本中包含字段说明示例。`platform`与`post_id`必须为非空字符串；日期为带时区的ISO时间；四个指标必须是非负整数或null。平台原始导出需先映射到此格式，当前没有原生平台连接器。客户数据仅在获得授权后接入。
+
+演示验收：5行输入去重后有4条内容，按发布周筛选纳入3条；demo-video两条内容合计1500浏览、70点赞、13评论、7分享，互动率6%；demo-notes因分享指标缺失不计算互动率。输出保留内容来源字段和每项覆盖率，便于复查。
+
+报告统计的是指定发布周内容的最新累计表现，不是观察周内新发生的互动。没有接入LLM、自动发布、平台抓取、定时任务、图形看板或竞品内容采集。生产方案需要先确认合法数据来源、指标定义、样例、数据量、部署和验收；不在售前原型中暗示这些已实现。
+
+## 无需运行即可查看
+
+- [样例报告](example-report.md)
+- [可追溯JSON](example-report.json)
+- [交付与验收说明](BUYER-NOTE.md)
+
+上面均为合成数据输出；可按运行命令重新生成。运行与测试需要 Python 3.10 或更新版本，仅使用标准库。
