@@ -17,6 +17,7 @@ python report.py sample.synthetic.json --week 2026-10-26 --output sample-output
 
 ## 无需运行即可查看
 
+- [服务范围、参考价格及免费询问入口](SERVICE.md)
 - [样例报告](example-report.md)
 - [可追溯JSON](example-report.json)
 - [交付与验收说明](BUYER-NOTE.md)
